@@ -261,6 +261,12 @@ button:hover {
   .bloc-nav ul {
     display: none;
   }
+  .contenair-texte p {
+    width: 90%px;
+    margin: 0 auto;
+    font-weight: 600;
+    line-height: 28px;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -292,6 +298,12 @@ button:hover {
   .contenair-news-box .news-box a {
     margin-bottom: 20px;
   }
+  .contenair-texte p {
+    width: 90%;
+    margin: 0 auto;
+    font-weight: 600;
+    line-height: 28px;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -302,6 +314,12 @@ button:hover {
   .contenair-jeu .box-jeu .jeu-box {
     max-width: 90%;
     margin: 0 auto;
+  }
+  .contenair-texte p {
+    width: 90%;
+    margin: 0 auto;
+    font-weight: 600;
+    line-height: 28px;
   }
 }
 
