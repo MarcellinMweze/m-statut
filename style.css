@@ -9,7 +9,6 @@
 body {
   margin: 0 auto;
   text-align: center;
-  height: 100vh;
 }
 
 button {
@@ -30,15 +29,21 @@ button:hover {
 }
 
 .bloc-nav {
-  max-width: 1000px;
-  margin: 0 auto;
+  width: 100%;
+  background: rgba(167, 108, 201, 0.85);
+  color: whitesmoke;
+  position: sticky;
+  top: 0px;
+  z-index: 10000;
 }
 
 .bloc-nav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 14px 0;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .bloc-nav li {
@@ -50,14 +55,14 @@ button:hover {
 }
 
 .bloc-nav li:first-child {
-  color: rgba(167, 108, 201, 0.85);
+  color: rgba(15, 14, 17, 0.95);
 }
 
 .bloc-nav li:first-child::before {
   content: "";
   width: 100%;
   position: absolute;
-  background: rgba(167, 108, 201, 0.85);
+  background: rgba(15, 14, 17, 0.95);
   height: 5px;
   transform: translateY(-22px);
 }
@@ -66,7 +71,7 @@ button:hover {
   content: "";
   width: 100%;
   position: absolute;
-  background: rgba(167, 108, 201, 0.85);
+  background: rgba(15, 14, 17, 0.95);
   height: 5px;
   transform: translateY(-22px);
 }
@@ -76,7 +81,7 @@ button:hover {
 }
 
 .bloc-nav li:last-child {
-  background: rgba(128, 128, 128, 0.25);
+  background: rgba(19, 18, 18, 0.25);
   border-radius: 50px;
   padding: 8px 16px;
 }
@@ -259,9 +264,6 @@ button:hover {
 }
 
 @media screen and (max-width: 900px) {
-  .bloc-nav ul {
-    display: none;
-  }
   .contenair-texte p {
     width: 90%;
     margin: 0 auto;
@@ -310,12 +312,14 @@ button:hover {
 @media screen and (max-width: 800px) {
   .contenair-jeu .box-jeu {
     flex-direction: column;
+    gap: 50px;
   }
 
   .contenair-jeu .box-jeu .jeu-box {
     max-width: 90%;
     margin: 0 auto;
   }
+
   .contenair-texte p {
     width: 90%;
     margin: 0 auto;
@@ -328,6 +332,9 @@ button:hover {
   .contenair-header img {
     width: 60%;
   }
+}
+
+@media screen and (max-width: 550px) {
 }
 
 @media screen and (max-width: 430px) {
