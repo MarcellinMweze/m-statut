@@ -37,14 +37,15 @@ button:hover {
 .bloc-nav ul {
   display: flex;
   justify-content: space-between;
-  margin: 14px 0;
   align-items: center;
+  padding: 14px 0;
 }
 
 .bloc-nav li {
   text-transform: uppercase;
   position: relative;
   cursor: pointer;
+  margin-right: 30px;
   font-weight: 800;
 }
 
@@ -81,7 +82,7 @@ button:hover {
 }
 
 .contenair-header {
-  background: url("./images/bg.jpg") fixed center/cover;
+  background: url("./images/bg.jpg") center/cover;
   color: whitesmoke;
   padding: 60px;
 }
@@ -262,7 +263,7 @@ button:hover {
     display: none;
   }
   .contenair-texte p {
-    width: 90%px;
+    width: 90%;
     margin: 0 auto;
     font-weight: 600;
     line-height: 28px;
@@ -272,7 +273,7 @@ button:hover {
 @media screen and (max-width: 850px) {
   .contenair-news-campus > div {
     flex-direction: column;
-    max-width: 90%;
+    width: 90%;
     margin: 0 auto;
   }
   .contenair-news-campus button {
