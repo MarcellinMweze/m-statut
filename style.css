@@ -30,11 +30,29 @@ button:hover {
 
 .bloc-nav {
   width: 100%;
-  background: rgba(167, 108, 201, 0.85);
+  background: rgba(167, 108, 201, 0.95);
   color: whitesmoke;
   position: sticky;
   top: 0px;
   z-index: 10000;
+}
+
+.links-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.links-nav .logo {
+  background: rgb(20, 20, 20);
+  padding: 14px;
+  border-radius: 50%;
+}
+
+.links-nav span {
+  font-weight: bolder;
 }
 
 .bloc-nav ul {
@@ -42,8 +60,6 @@ button:hover {
   justify-content: space-around;
   align-items: center;
   padding: 14px 0;
-  width: 90%;
-  margin: 0 auto;
 }
 
 .bloc-nav li {
@@ -328,9 +344,16 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 675px) {
   .contenair-header img {
     width: 60%;
+  }
+  .bloc-nav ul {
+    display: none;
+  }
+  .links-nav {
+    height: 60px;
+    justify-content: center;
   }
 }
 
