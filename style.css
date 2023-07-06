@@ -82,7 +82,7 @@ button:hover {
 }
 
 .contenair-header {
-  background: url("./images/bg.jpg") center/cover;
+  background: url("./images/bg.jpg") fixed center/cover;
   color: whitesmoke;
   padding: 60px;
 }
